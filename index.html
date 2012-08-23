@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<title>Mastercard Halfpage Demo</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+
+  <div id="halfpage-ad-mastercard">
+    <a href="http://www.example.com" target="_blank">
+      <img src="http://img.wpdigital.net/wp-adv/advertisers/mastercard/2012/03/halfpage/main.jpg" width="336" height="850" alt="" style="outline:0;border:0;" />
+    </a>
+    <div id="halfpage-ad-mastercard-video">
+      <!-- video is loaded in here -->
+    </div>
+  </div>
+  
+  
+  <script type="text/javascript">
+    var wpAd = window.wpAd || {};
+    wpAd.mastercardVars = {};
+    
+    //set options:
+    wpAd.mastercardVars.clickTag = "http://www.example.com"; //url that the ad should click through to
+    wpAd.mastercardVars.videoName = "SlateMasterCard_ct"; //video name (minus extension)
+    wpAd.mastercardVars.posterURL = "http://img.wpdigital.net/wp-adv/advertisers/mastercard/2012/03/halfpage/poster.jpg"; //poster image url
+    wpAd.mastercardVars.videoPixel = ""; //removed to prevent inaccurate impressions. Tracking pixel would normally go here.
+  </script>
+  <script type="text/javascript" src="Modernizr.js"></script>
+  <script type="text/javascript" src="mastercard.js"></script>
+
+</body>
+</html>
